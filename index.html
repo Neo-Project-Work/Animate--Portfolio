@@ -1,55 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <nav>
-            <div class="logo">Jusha<b>.</b></div>
-            <ul class="navItem">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
-            <div class="links">
-                <a href=""><img src="/assets/svg/icons8-facebook.svg" alt="GitHub"></a>
-                <a href=""><img src="/assets/svg/icons8-twitter.svg" alt="LinkedIn"></a>
-                <a href=""><img src="/assets/svg/icons8-instagram.svg" alt="Instagram"></a>
-            </div>
-        </nav>
-        <div class="wrapper">
-            <div class="cols cols0">
-                <span class="topLine">Hello</span>
-                <h1>I'm <span class="multiText"></span></h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore consequatur possimus.</p>
-                <div class="btns">
-                    <button>Download CV</button>
-                    <button>hIRE mE</button>
-                </div>
-            </div>
-            <div class="cols cols1">
-                <div class="imgbox">
-                    <img src="/assets/images/smoke.jpg" alt="" id="splash" />
-                    <img src="/assets/images/project-1.png" />
-                </div>
-            </div>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+
+      <i class="bx bx-menu" id="menu"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact-us">Contact</a>
+      </nav>
+    </header>
+
+    <!-- home section -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Neo Jusha</h1>
+        <h3>And I'm a <span>JS Frontend Developer</span></h3>
+        <p>
+          Mid frontend developer with 4+ years of experience building responsive
+          web application in the advertising industry. Proficient with JS
+          Framework , with extensive knowledge of backend workflow. Notable
+          achievements include boosting the conversion rate of an existing
+          website with improved code
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
         </div>
-    </div>
-    <script src="https:cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typingEffect = new Typed('.multiText', {
-            strings : [' Coder', ' JS Developer'],
-            loop: true,
-            typeSpeed : 100,
-            backSpeed : 80,
-            backDelay : 1500
-        })
-    </script>
-</body>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="assets/images/project-1.png" alt="" />
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="assets/images/project-1.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>JS Frontend Developer</h3>
+        <p>
+          I am a Mid-Level JavaScript Developer with 4 years + experience who is
+          interested in Development and DevOps roles. I am comfortable working
+          with JavaScript, Relational databases (MySQL) and Non-Relational
+          (MongoDB). I am open to learning other based programming languages
+          such as Java, Python, GO and open-source frameworks/ libraries. In my
+          next role, I wanted to have various tasks related to Backend and
+          DevOps
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section class="service" id="service">
+      <h2 class="heading">Our <span>Services</span></h2>
+      <!-- web developement -->
+      <div class="service-container">
+        <div class="service-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Frontend Develepment</h3>
+          <p>
+            A front-end developer builds the front-end portion of websites and
+            web applications—the part users see and interact with. A front-end
+            developer creates websites and applications using web languages such
+            as HTML, CSS, and JavaScript that allow users to access and interact
+            with the site or app.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="service-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Backend Development</h3>
+          <p>
+            Node. js (Node) is an open source, cross-platform runtime
+            environment for executing JavaScript code. Node is used extensively
+            for server-side programming, making it possible for developers to
+            use JavaScript for client-side and server-side code without needing
+            to learn an additional language
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="service-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>DevOps</h3>
+          <p>
+            DevOps can be best explained as people working together to conceive,
+            build and deliver secure software at top speed. DevOps practices
+            enable software development (dev) and operations (ops) teams to
+            accelerate delivery through automation, collaboration, fast
+            feedback, and iterative improvement.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest<span>Project</span></h2>
+
+      <div class="portfolio-container">
+        <!-- Toyota site -->
+        <div class="portfolio-box">
+          <img src="assets/images/toyota-image.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Toyota</h4>
+            <p>
+              Responsible for the development and implementation of responsive
+              websites and web applications for user interaction on desktop,
+              laptop and tablet and mobile devices.
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <!-- Lexus site -->
+        <div class="portfolio-box">
+          <img src="assets/images/lexus-image.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Lexus</h4>
+            <p>
+              Responsible for the development and implementation of responsive
+              websites and web applications for user interaction on desktop,
+              laptop and tablet and mobile devices.
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <!-- Toyota Gazoo -->
+        <div class="portfolio-box">
+          <img src="assets/images/toyota-gazoo.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Toyota Gazoo Racing</h4>
+            <p>
+              The Toyota Gazoo Racing platform is a place for racing enthusiasts
+              to come and immerse themselves in all things Toyota motorsport.
+              The platform was designed for regular content updates of the
+              latest racing content, behind-the-scenes videos and racing news.
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <!-- Nahana site -->
+        <div class="portfolio-box">
+          <img src="assets/images/nahana-image.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Nahana</h4>
+            <p>
+              The newly built Nahana Group platform shows potential clients what
+              value this collection of specialised agencies can offer in a world
+              of overwhelming choices of marketing and technology.
+            </p>
+            <a href=""><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form section -->
+    <section class="contact" id="contact-us">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Phone Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Jusha | All right Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href=""><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/script.js"></script>
+  </body>
 </html>
